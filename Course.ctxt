@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Course()
+comment1.params=name\ assigned\ grade\ rFromFront\ rFromTeacher\ workHours\ teacherVisits
+comment1.target=Course(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.params=n
+comment2.target=void\ setName(java.lang.String)
+comment3.params=n
+comment3.target=void\ setAssigned(boolean)
+comment4.params=n
+comment4.target=void\ setGrade(double)
+comment5.params=n
+comment5.target=void\ setRFromFront(int)
+comment6.params=n
+comment6.target=void\ setRFromTeacher(int)
+comment7.params=n
+comment7.target=void\ setWorkHours(int)
+comment8.params=n
+comment8.target=void\ setTeacherVisits(int)
+comment9.params=str\ i
+comment9.target=double\ strToDub(java.lang.String,\ int)
+numComments=10
