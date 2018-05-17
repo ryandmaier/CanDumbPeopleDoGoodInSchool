@@ -6,12 +6,14 @@ public class Main
     String txt;
     ArrayList<String[]> responses = new ArrayList<String[]>();
     ArrayList<Course> courses = new ArrayList<Course>();
+    
 
     public Main()
     {
         txt = "Can dumb people do good in school_ Smart people say yes! (Responses) - Form Responses 1.csv";
         run();
         System.out.println(getNumDataPoints());
+        getMemesThatAreSexyAndDank();
     }
 
     public void run()
@@ -50,15 +52,29 @@ public class Main
         }
         return sum;
     }
-    
+
     public void getMemesThatAreSexyAndDank()
     {
         int rff = 0;
-        
+        int rft = 0;
+        int wh = 0;
+        int tv = 0;
+        int gr = 0;
         for(int i = 0; i<courses.size(); i++)
         {
-            
+            Course c = courses.get(i);
+            rff+=c.rFromFront;
+            rft+=c.rFromTeacher;
+            wh+=c.workHours;
+            tv+=c.teacherVisits;
+            gr+=c.grade;
         }
+        int n = courses.size();
+        System.out.println("Mean rows from front: " + rff/n);
+        System.out.println("Mean rows from teacher: " + rft/n);
+        System.out.println("Mean studying hours: " + wh/n);
+        System.out.println("Mean teacher visit score: " + tv/n);
+        System.out.println("Mean grade: " + gr/n);
         System.out.println();
     }
 
